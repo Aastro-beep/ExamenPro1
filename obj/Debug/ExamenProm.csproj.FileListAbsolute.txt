@@ -1,0 +1,7 @@
+C:\Users\Usuario\source\repos\ExamenProm\bin\Debug\ExamenProm.exe.config
+C:\Users\Usuario\source\repos\ExamenProm\bin\Debug\ExamenProm.exe
+C:\Users\Usuario\source\repos\ExamenProm\bin\Debug\ExamenProm.pdb
+C:\Users\Usuario\source\repos\ExamenProm\obj\Debug\ExamenProm.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\ExamenProm\obj\Debug\ExamenProm.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\ExamenProm\obj\Debug\ExamenProm.exe
+C:\Users\Usuario\source\repos\ExamenProm\obj\Debug\ExamenProm.pdb

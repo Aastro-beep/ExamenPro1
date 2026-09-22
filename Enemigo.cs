@@ -13,7 +13,7 @@ namespace ExamenProm
         public Enemigo(int vida, int dano)
         {
             HealthEnemy = vida;
-            HealthEnemy = dano;
+            DamageEnemy = dano;
         }
         public void RecibirDamageEnemy(int cantidad)
         {
