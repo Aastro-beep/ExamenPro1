@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{1BA68E34-1A67-4E22-AE8D-6FC9F7182E6F}|ExamenProm.csproj|c:\\users\\usuario\\source\\repos\\examenprom\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BA68E34-1A67-4E22-AE8D-6FC9F7182E6F}|ExamenProm.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BA68E34-1A67-4E22-AE8D-6FC9F7182E6F}|ExamenProm.csproj|c:\\users\\usuario\\source\\repos\\examenprom\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BA68E34-1A67-4E22-AE8D-6FC9F7182E6F}|ExamenProm.csproj|solutionrelative:jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BA68E34-1A67-4E22-AE8D-6FC9F7182E6F}|ExamenProm.csproj|c:\\users\\usuario\\source\\repos\\examenprom\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BA68E34-1A67-4E22-AE8D-6FC9F7182E6F}|ExamenProm.csproj|solutionrelative:enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Enemigo.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ExamenProm\\Enemigo.cs",
+              "RelativeDocumentMoniker": "Enemigo.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ExamenProm\\Enemigo.cs",
+              "RelativeToolTip": "Enemigo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T00:31:31.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Jugador.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ExamenProm\\Jugador.cs",
+              "RelativeDocumentMoniker": "Jugador.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ExamenProm\\Jugador.cs",
+              "RelativeToolTip": "Jugador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T00:31:16.641Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
