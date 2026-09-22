@@ -14,8 +14,11 @@ namespace ExamenProm
             while (volverAJugar)
             {
                 Console.Clear();
-                Console.WriteLine("--- Juego de TURNOS ---");
-                Console.WriteLine("¡Crea tu jugador! Ingrese la vida (Máx. 100)");
+                Console.WriteLine("-----------------------");
+                Console.WriteLine("---   BIENVENIDO A ---");
+                Console.WriteLine("--- JUEGO DE TURNOS ---");
+                Console.WriteLine("-----------------------");
+                Console.WriteLine("¡Crea tu JUGADOR! Ingrese la vida (Máx. 100)");
                 int vidaJugador = Convert.ToInt32(Console.ReadLine());
                 if (vidaJugador > 100)
                 {
@@ -29,7 +32,7 @@ namespace ExamenProm
                 }
                 Jugador jugador = new Jugador(vidaJugador, danoJugador);
 
-                Console.WriteLine("¡Crea tu enemigo! Ingrese la cantidad");
+                Console.WriteLine("¡Crea tu ENEMIGO! Ingrese la cantidad");
                 int cantidadEnemigos = Convert.ToInt32(Console.ReadLine());
                 List<Enemigo> listaDeEnemigos = new List<Enemigo>();
 
@@ -69,26 +72,28 @@ namespace ExamenProm
                         break;
                     }
                     Console.Clear();
-                    Console.WriteLine($"Nuevo jugador. Vida: {jugador.Health} Daño: {jugador.ObtenerDamage()}");
-                    Console.WriteLine("--- Lista de enemigos ---");
+                    Console.WriteLine($"Nuevo JUGADOR. Vida: {jugador.Health} Daño: {jugador.ObtenerDamage()}");
+                    Console.WriteLine("--------------------------");
+                    Console.WriteLine("--- LISTA DE ENEMIGOS ---");
+                    Console.WriteLine("--------------------------");
 
                     for (int i = 0; i < listaDeEnemigos.Count; i++)
                         if (listaDeEnemigos[i].IsAliveEnemy())
                         {
-                            Console.WriteLine($"{i + 1} Enemigo {i + 1} y Vida: {listaDeEnemigos[i].HealthEnemy}");
+                            Console.WriteLine($"{i + 1}- Enemigo {i + 1} y Vida: {listaDeEnemigos[i].HealthEnemy}");
                         }
                         else
                         {
-                            Console.WriteLine($"{i + 1} Enemigo {i + 1} - Muerto");
+                            Console.WriteLine($"{i + 1}- Enemigo {i + 1} - Muerto");
                         }
-                    Console.WriteLine("¡Seleccione el numero de enemigo para atacar!");
+                    Console.WriteLine("¡Seleccione el NUMERO de enemigo para ATACAR!");
                     int opcion = Convert.ToInt32(Console.ReadLine()) - 1;
                     if (opcion >= 0 && opcion < listaDeEnemigos.Count)
                     {
                         if (listaDeEnemigos[opcion].IsAliveEnemy())
                         {
                             listaDeEnemigos[opcion].RecibirDamageEnemy(jugador.ObtenerDamage());
-                            Console.WriteLine($"¡Atacaste al enemigo {opcion + 1} y lograste {jugador.ObtenerDamage()} de daño!");
+                            Console.WriteLine($"¡Atacaste al enemigo {opcion + 1} y lograste {jugador.ObtenerDamage()} de DAÑO!");
                         }
                         else
                         {
@@ -104,7 +109,7 @@ namespace ExamenProm
                         if (listaDeEnemigos[i].IsAliveEnemy())
                         {
                             jugador.RecibirDamage(listaDeEnemigos[i].ObtenerDamageEnemy());
-                            Console.WriteLine($"¡El enemigo {i + 1} te atacó y logró {listaDeEnemigos[i].ObtenerDamageEnemy()} de daño!");
+                            Console.WriteLine($"¡El enemigo {i + 1} te ATACÓ y LOGRÓ {listaDeEnemigos[i].ObtenerDamageEnemy()} de DAÑO!");
                         }
                     }
                     Console.WriteLine("Presione Enter para continuar...");
@@ -114,13 +119,17 @@ namespace ExamenProm
                 Console.Clear();
                 if (jugador.IsAlive())
                 {
+                    Console.WriteLine("--------------------------------------");
                     Console.WriteLine("--- ¡¡VICTORY!! ¡Eliminaste TODO! ---");
-                    Console.WriteLine("Recompensa: 5 moneditas");
+                    Console.WriteLine("      Recompensa: 5 moneditas");
+                    Console.WriteLine("--------------------------------------");
                 }
                 else
                 {
+                    Console.WriteLine("-------------------------------------------");
                     Console.WriteLine("--- ¡FATALITY! ¡TÚ fuiste el eliminado! ---");
-                    Console.WriteLine("Te quitaron 5 moneditas");
+                    Console.WriteLine("         Te quitaron 5 moneditas");
+                    Console.WriteLine("-------------------------------------------");
                 }
                 Console.WriteLine("¿Quieres empezar de nuevo? (si/no)");
                 string respuesta = Console.ReadLine();
